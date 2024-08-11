@@ -1,0 +1,59 @@
+C:\laragon\www\synfony01\
+│
+├── src\
+│   ├── .env
+│   ├── .env.test
+│   ├── .gitignore
+│   ├── bin\
+│   ├── composer copy.json
+│   ├── composer copy.lock
+│   ├── composer.json
+│   ├── composer.lock
+│   ├── config\
+│   │   ├── packages\
+│   │   ├── routes\
+│   │   ├── bundles.php
+│   │   ├── preload.php
+│   │   ├── routes.yaml
+│   │   ├── services.yaml
+│   ├── Dockerfile
+│   ├── migrations\
+│   ├── phpunit.xml.dist
+│   ├── public\
+│   ├── src\
+│   │   ├── Controller\
+│   │   │   ├── AboutController.php
+│   │   │   ├── ContactController.php
+│   │   │   ├── HomeController.php
+│   │   │   └── .gitignore
+│   ├── symfony.lock
+│   ├── templates\
+│   │   ├── about.html.twig
+│   │   ├── base.html.twig
+│   │   ├── base.html.twig_bkp
+│   │   ├── contact.html.twig
+│   │   ├── home.html.twig
+│   ├── tests\
+│   ├── translations\
+│   ├── var\
+│   └── vendor\
+│
+├── websocket_server\
+│   ├── Dockerfile
+│   ├── start.sh
+│   └── websocket.php
+│
+├── documentacao\
+│   ├── comandos.txt
+│   └── estrutura.txt
+│
+├── mysql\
+│   ├── Dockerfile
+│   ├── mysql-data\
+│   ├── mysql-init\
+│   └── init.sql
+│
+├── docker-compose.yml
+│
+└── docker_to_src\
+    └── Dockerfile

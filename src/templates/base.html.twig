@@ -1,0 +1,48 @@
+<!-- C:\laragon\www\synfony01\src\templates\base.html.twig -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}
+                Template do Symfony
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Cabeçalho da Página
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{{ path('home') }}">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ path('about') }}">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ path('contact') }}">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>
+                © 2024 Exemplo de Site. Todos os direitos reservados.
+            </p>
+        </footer>
+    </body>
+</html>

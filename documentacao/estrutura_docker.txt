@@ -1,0 +1,26 @@
+Contêineres Docker para o projeto synfony01:
+
+1. synfony02-php81-apache
+   - ID do Contêiner: 84b393e45831
+   - Porta: 45300:80
+   - Imagem: php:8.1-apache
+
+2. synfony02-php81-websocket
+   - ID do Contêiner: bf6f396e84a2
+   - Porta: 45301:5202
+   - Imagem: php:8.1-cli
+
+3. synfony02-adminer
+   - ID do Contêiner: 46946cf6306
+   - Porta: 45303:8080
+   - Imagem: adminer
+
+4. synfony02-phpmyadmin
+   - ID do Contêiner: 0779eaf9f4c6
+   - Porta: 45302:80
+   - Imagem: phpmyadmin/phpmyadmin
+
+5. synfony02-mysql
+   - ID do Contêiner: d3b01d6e3f2c
+   - Porta: 33453:3306
+   - Imagem: synfony01-mysql80

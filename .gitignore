@@ -1,0 +1,7 @@
+
+mysql/mysql-data/*
+synfony01.zip
+documentacao/*
+!documentacao/comandos.txt
+!documentacao/estrutura_docker.txt
+!documentacao/estrutura_projeto.txt
