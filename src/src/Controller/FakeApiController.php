@@ -7,9 +7,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FakeApiController
 {
-    /**
-     * @Route("/api/fake", name="fake_api")
-     */
+    #[Route('/api', name: 'api')]
     public function fakeData(): JsonResponse
     {
         $data = [

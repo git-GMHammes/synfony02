@@ -2,8 +2,8 @@ cd C:\laragon\www\synfony01
 Colocar Dockerfile na pasta: "C:\laragon\www\synfony01\"
 Resultado: "C:\laragon\www\synfony01\src"
 
-docker-compose up --build -d 
-
+docker-compose up --build -d
+ 
 docker stop $(docker ps -aq)
 docker rm -f $(docker ps -aq)
 docker rmi -f $(docker images -q)
@@ -11,7 +11,7 @@ docker volume prune -f
 docker volume rm devopsteste_db-data -f
 docker network prune -f
 docker system prune -a
-
+ 
 cd C:\laragon\www\synfony01\
 ação: limpar pasta src
 docker-compose run php81-apache composer create-project symfony/website-skeleton .
@@ -19,7 +19,4 @@ ação: copiar conteudo da pasta "docker_to_src" para src
 
 docker exec -it synfony02-php81-apache php bin/console cache:clear
 docker exec -it synfony02-php81-apache php bin/console debug:router
-
-docker exec -it synfony02-php81-apache php bin/console cache:clear
-docker exec -it synfony02-php81-apache php bin/console debug:router
-
+ 

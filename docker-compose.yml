@@ -1,6 +1,6 @@
 services:
   php81-apache:
-    build: ./composer
+    build: ./src
     image: php:8.1-apache
     container_name: synfony02-php81-apache
     restart: always

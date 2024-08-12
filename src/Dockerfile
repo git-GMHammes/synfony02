@@ -34,10 +34,11 @@ RUN a2enmod rewrite
 WORKDIR /var/www/html
 
 # Modifica a configuração do DocumentRoot
-ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+ENV APACHE_DOCUMENT_ROOT /var/www/html
 
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
 # Comando para instalar dependências e iniciar o Apache
-# CMD ["bash", "-c", "composer update && composer dump-autoload && apache2-foreground"]
+CMD ["bash", "-c", "composer update && composer dump-autoload && apache2-foreground"]
+
